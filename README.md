@@ -6,7 +6,6 @@ Lightweight Chrome extension (popup + background service worker) that sends prom
 
 ## ⚙️ Prerequisites
 - Node.js (v16+ recommended)  
-- npm (comes with Node)  
 - Google GenAI API key  
 
 ---
@@ -27,7 +26,7 @@ npm run build
 
 ```
 
-🧩 Load in Chrome
+## 🧩 Load in Chrome
 
 Open chrome://extensions/
 

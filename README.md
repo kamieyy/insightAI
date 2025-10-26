@@ -25,6 +25,8 @@ npm install --save-dev vite
 # 3. Build the project
 npm run build
 
+```
+
 🧩 Load in Chrome
 
 Open chrome://extensions/
@@ -34,5 +36,3 @@ Enable Developer mode
 Click Load unpacked
 
 Select the folder that contains manifest.json
-
-Make sure dist/background.js exists (run npm run build first)

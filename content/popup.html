@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chat</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="chat-sidebar">
+      <div id="header">
+        <img src="../icons/icon16.png" alt="Insight AI" width="16" height="16"
+        position: absolute; left: 8px; top: 50%; transform: translateY(-50%);
+        width: 16px; height: 16px; object-fit: contain; opacity: 0.9;
+        pointer-events: none; />
+        <span style="text-align: left">Insight - your research partner</span>
+        <button id="closeSidebar">✕</button>
+      </div>
+
+      <div id="messages"></div>
+
+      <div id="input-container">
+        <input id="input" type="text" placeholder="Type a message..." />
+        <button id="sendBtn">➤</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

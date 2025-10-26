@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 380px; /* standard Chrome extension popup width */
+  height: 600px; /* normal full height like the Extensions menu */
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Chat container === */
+#chat-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #333;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.5);
+  background-color: #111;
+}
+
+/* === Header === */
+#header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #222;
+  font-weight: 600;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#closeSidebar {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* === Messages area === */
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  scrollbar-width: thin;
+}
+
+#messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 3px;
+}
+
+/* === Input area === */
+#input-container {
+  border-top: 1px solid #222;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  gap: 8px;
+}
+
+#input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+}
+
+#sendBtn {
+  background: #0078d7;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* === Chat bubbles === */
+.msg-user {
+  align-self: flex-end;
+  background: #0078d7;
+  color: white;
+  border-radius: 12px;
+  padding: 8px 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.msg-bot {
+  align-self: flex-start;
+  background: #333;
+  color: white;
+  border-radius: 12px;
+  padding: 8px 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+}

@@ -15457,7 +15457,7 @@ class GoogleGenAI {
   }
 }
 const ai = new GoogleGenAI({
-  apiKey: "AIzaSyCldKfzfJD-JPmTdk0I9--6b0P156kLCBM",
+  apiKey: "API KEY",
   // replace with your actual key
 });
 chrome.action.onClicked.addListener(async (tab) => {
